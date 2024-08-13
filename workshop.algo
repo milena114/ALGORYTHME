@@ -1,0 +1,26 @@
+//À ce point de contrôle, il vous est  demandé  d'écrire un algorithme qui lit une phrase qui se termine par un point, caractère par caractère, et de déterminer :
+//La longueur de la phrase (le nombre de caractères).
+
+
+ALGORITHM WORKSHOP
+VAR
+caractere : CHAR
+nbr-mots: INTEGER :=1
+sentence : STRING : ="ecrivez une phrase "
+nbr-voyelle : INTEGER :=0
+nbr-caracteres : INTEGER :=0
+BEGIN
+WHILE ( caractere != "." ) DO
+       Read( caractere) 
+       nbr-caracteres =nbr-caracteres+1
+       IF ( caractere = " ") THEN
+       nbr-mots=nbr-mots + 1
+        
+       END_IF
+       IF (caractere = "i" or caractere= "e" or caractere ="u" or caractere="a" or caractere = "o")  THEN
+        nbr-voyelle = nbr-voyelle + 1
+       END_IF
+    
+END_WHILE
+   
+END
